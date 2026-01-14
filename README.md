@@ -18,7 +18,7 @@ This project demonstrates an event-driven architecture using **NestJS**, **Kafka
 
 ## 🛠️ Project Setup
 
-### 1. Start Infrastructure (Kafka & Zookeeper)
+### 1. Start Infrastructure (Kafka )
 Since there is no `docker-compose.yml`, run the following commands manually in PowerShell or Command Prompt to start the necessary containers.
 
 **Create Network:**
@@ -26,10 +26,6 @@ Since there is no `docker-compose.yml`, run the following commands manually in P
 docker network create mq-net
 ```
 
-**Run Zookeeper:**
-```bash
-docker run -d --name zookeeper --network mq-net -p 2181:2181 -e ZOOKEEPER_CLIENT_PORT=2181 -e ZOOKEEPER_TICK_TIME=2000 --restart unless-stopped confluentinc/cp-zookeeper:latest
-```
 
 **Run Kafka:**
 ```bash
