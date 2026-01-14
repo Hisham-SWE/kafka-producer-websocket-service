@@ -11,6 +11,7 @@ This project demonstrates an event-driven architecture using **NestJS**, **Kafka
     *   A NestJS background service.
     *   Subscribes to the `order-placement` Kafka topic.
     *   Processes orders (Validation -> Payment -> Shipping) with simulated delays.
+    *   [GitHub Repo Link](https://github.com/Hisham-SWE/kafka-consumer-service)
 
 ## 🚀 Prerequisites
 -   **Node.js** (v16+)
